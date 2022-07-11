@@ -1,0 +1,30 @@
+{
+  "name": "package-delivery-system",
+  "version": "1.0.0",
+  "description": "design a package delivery system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dheerajpenta/package-delivery-system.git"
+  },
+  "author": "dheeraj penta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dheerajpenta/package-delivery-system/issues"
+  },
+  "homepage": "https://github.com/Dheerajpenta/package-delivery-system#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "ngrok": "^4.3.1",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
