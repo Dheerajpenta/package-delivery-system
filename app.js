@@ -19,10 +19,12 @@ app.use(bodyParser.json());
 // importing route files
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
+const couponRoutes = require("./routes/coupon");
 
 // routes
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
+app.use("/coupon", couponRoutes);
 
 // function to syncing data with database and starting port
 (async () => {
