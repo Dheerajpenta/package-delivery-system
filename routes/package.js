@@ -11,7 +11,7 @@ const packageController = require("../controllers/package");
 const checkUser =  require("../services/check-auth").checkUser;
 
 // validation files
-const packageValidator =  require("../validattions/package");
+const packageValidator =  require("../validations/package");
 
 //GET - gets all package - /package/
 router.get("/", checkUser, packageController.getPackage);

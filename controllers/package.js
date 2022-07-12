@@ -502,7 +502,7 @@ exports.deletePackage = async (req, res) => {
         };
 
         // if package payemnt paid
-        if (!package.paymentId) {
+        if (package.paymentId !== null) {
 
             // sending res if email already verified
             return  res.status(200).send({
