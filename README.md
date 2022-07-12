@@ -77,7 +77,7 @@ npm init
 > doubts? follow [Nodemailer](https://nodemailer.com/about/)
 
 ### .env 
-> - .env file should contain the following id's
+> .env file should contain the following id's
 - USER_ID
 - USER_PASSWORD
 - EMAIL_VERIFICATION 
@@ -91,9 +91,11 @@ npm init
 - RAZORPAY_KEY_ID
 - RAZORPAY_KEY_SECRET
 - VERIFY_PAYMENT_SECRET_KEY
-> - problem with naming ?, find and edit the name of the key where it has been used in the code
+> problem with naming ?, find and edit the name of the key where it has been used in the code
+
+> > doubts? follow [dotenv](https://www.npmjs.com/package/dotenv)
 
 ### feature updates  ?
-- will try to add google matrix api to fetch exact distance, time to for picking and delivering the package
+- will try to add google matrix api to fetch exact distance, time for picking and delivering the package
 - will try to add admin role 
 > as of now user can access all roles
