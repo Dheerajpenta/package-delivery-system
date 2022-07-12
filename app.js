@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 const packageRoutes = require("./routes/package");
+const paymentRoutes = require("./routes/payment");
 const trackingRoutes = require("./routes/tracking");
 const couponRoutes = require("./routes/coupon");
 
@@ -27,6 +28,7 @@ const couponRoutes = require("./routes/coupon");
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
 app.use("/package", packageRoutes);
+app.use("/payment", paymentRoutes);
 app.use("/tracking", trackingRoutes);
 app.use("/coupon", couponRoutes);
 
