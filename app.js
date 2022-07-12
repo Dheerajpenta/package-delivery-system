@@ -16,6 +16,12 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// importing route files
+const userRoutes = require("./routes/user");
+
+// routes
+app.use("/user", userRoutes);
+
 // function to syncing data with database and starting port
 (async () => {
     try {
