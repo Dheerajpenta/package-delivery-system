@@ -8,7 +8,7 @@ const router = express.Router();
 const authController = require("../controllers/auth");
 
 // validation files
-const signUpUserValidator =  require("../validattions/user").signUpUserValidator;
+const signUpUserValidator =  require("../validations/user").signUpUserValidator;
 
 //POST - user signup - /auth/signup/
 router.post("/signup", signUpUserValidator(), authController.signUp);

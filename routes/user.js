@@ -11,7 +11,7 @@ const userController = require("../controllers/user");
 const checkUser =  require("../services/check-auth").checkUser;
 
 // validation files
-const userValidator =  require("../validattions/user");
+const userValidator =  require("../validations/user");
 
 //GET - sends all users - /user/
 router.get("/", checkUser, userController.getUsers);

@@ -11,7 +11,7 @@ const couponController = require("../controllers/coupon");
 const checkUser =  require("../services/check-auth").checkUser;
 
 // validation files
-const couponValidator =  require("../validattions/coupon");
+const couponValidator =  require("../validations/coupon");
 
 //GET - gets all coupons - /coupon/
 router.get("/", checkUser, couponController.getCoupons);

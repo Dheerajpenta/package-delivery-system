@@ -11,7 +11,7 @@ const feedbackController = require("../controllers/feedback");
 const checkUser =  require("../services/check-auth").checkUser;
 
 // validation files
-const feedbackValidator =  require("../validattions/feedback");
+const feedbackValidator =  require("../validations/feedback");
 
 //GET - gets all feedback - /feedback/
 router.get("/", checkUser, feedbackController.getFeedbacks);
