@@ -17,9 +17,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // importing route files
+const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 
 // routes
+app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
 
 // function to syncing data with database and starting port
