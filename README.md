@@ -96,6 +96,6 @@ npm init
 > > doubts? follow [dotenv](https://www.npmjs.com/package/dotenv)
 
 ### feature updates  ?
-- will try to add google matrix api to fetch exact distance, time for picking and delivering the package
+- will try to add google matrix api to fetch exact distance, time form picking up the package to delivering the package
 - will try to add admin role 
-> as of now user can access all roles
+> as of now user can access all routes
