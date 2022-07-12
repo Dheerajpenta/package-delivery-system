@@ -59,19 +59,21 @@ npm init
 
 - Create an accounts in [Twilio](https://www.twilio.com/)
 > - follow twilio [docs](https://www.twilio.com/docs/) to know more about twilio 
-> - collect TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_SERVICE_SID, TWILIO_PHONE_NUMBER 
+> - collect TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_SERVICE_SID, TWILIO_PHONE_NUMBER
+> - save the secret keys in .env file
 > - follow [twilio package](https://www.twilio.com/docs/verify/api) for knowing the more about the package we are using it for otp sending nd verifying
 
 > doubts? follow [docs](https://www.twilio.com/docs/) or [YouTube](https://www.youtube.com/watch?v=UBjMm_nb45U)
 
 - JWT package
 > - you can test your JWT in this [website](https://jwt.io/)
-> - create unique secret keys for EMAIL_VERIFICATION, LOGIN, ADMIN_LOGIN and store it in .env 
+> - create unique secret keys for EMAIL_VERIFICATION, LOGIN, ADMIN_LOGIN
+> - save the secret keys in .env file
 
 > doubts? follow [JWT](https://github.com/auth0/node-jsonwebtoken)
 
 - Nodemailer package
-> - store your gmail account USER_ID, USER_PASSWORD in .env
+> - store your gmail account's USER_ID, USER_PASSWORD in .env
 > - we will use these credentials to test our email verification 
 
 > doubts? follow [Nodemailer](https://nodemailer.com/about/)
