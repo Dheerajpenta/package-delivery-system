@@ -20,12 +20,14 @@ app.use(bodyParser.json());
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 const packageRoutes = require("./routes/package");
+const trackingRoutes = require("./routes/tracking");
 const couponRoutes = require("./routes/coupon");
 
 // routes
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
 app.use("/package", packageRoutes);
+app.use("/tracking", trackingRoutes);
 app.use("/coupon", couponRoutes);
 
 // function to syncing data with database and starting port
