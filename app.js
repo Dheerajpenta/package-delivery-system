@@ -23,6 +23,7 @@ const packageRoutes = require("./routes/package");
 const paymentRoutes = require("./routes/payment");
 const trackingRoutes = require("./routes/tracking");
 const couponRoutes = require("./routes/coupon");
+const feedbackRoutes = require("./routes/feedback");
 
 // routes
 app.use("/auth", authRoutes);
@@ -31,6 +32,7 @@ app.use("/package", packageRoutes);
 app.use("/payment", paymentRoutes);
 app.use("/tracking", trackingRoutes);
 app.use("/coupon", couponRoutes);
+app.use("/feedback", feedbackRoutes);
 
 // function to syncing data with database and starting port
 (async () => {
