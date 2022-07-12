@@ -4,6 +4,64 @@ const { check } = require("express-validator");
 // models
 const User =  require("../models/user");
 
+// signup user validator function
+exports.signUpUserValidator =  () => {
+    return [
+
+        // validation for user name
+        check("name")
+            .trim()
+            .notEmpty().withMessage("please enter name").bail()
+            .isLength({ min: 4}).withMessage("name should have minimum 4 characters").bail()
+            .custom(async(val) => {
+
+                // fetching user details from database
+                const user = await User.findOne({ where:{ name: val } });
+
+                // if user exists reject promise
+                 if (user) { return Promise.reject("name already exists")}
+            }),
+
+        
+        // validation for user email
+        check("email")
+            .trim()
+            .notEmpty().withMessage("please enter email").bail()
+            .isEmail().withMessage("please enter a valid email").bail()
+            .custom(async(val) => {
+
+                // fetching user details from database
+                const user = await User.findOne({ where:{ email: val } });
+
+                // if user exists reject promise
+                 if (user) { return Promise.reject("email already exists")}
+            }),
+
+
+        // validation for user phone number
+        check("phoneNumber")
+            .trim()
+            .notEmpty().withMessage("please enter phone number").bail()
+            .matches(/^[6-9]\d{9}$/).withMessage("please enter a valid phone number").bail()
+            .custom(async(val) => {
+
+                // fetching user details from database
+                const user = await User.findOne({ where:{ phoneNumber: val } });
+
+                // if user exists reject promise
+                 if (user) { return Promise.reject("phone number already exists")}
+            }),
+        
+
+        // validation for user password
+        check("password")
+            .trim()
+            .notEmpty().withMessage("please enter password").bail()
+            .isLength({ min: 8}).withMessage("password should have minimum 8 characters").bail()
+            .matches(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/).withMessage("password must contain 8 characters and include one lowercase, one uppercase, one number").bail(),
+    ];
+};
+
 // update user validator function
 exports.updateUserValidator =  () => {
     return [
