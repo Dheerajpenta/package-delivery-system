@@ -16,6 +16,12 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// importing associations file
+const Associations = require("./associations");
+
+// calling associations function
+Associations.setAssociations();
+
 // importing route files
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
