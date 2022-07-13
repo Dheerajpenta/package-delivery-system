@@ -6,7 +6,7 @@
 - [production dependencies](#production-dependencies)
 - [Installation](#installation)
 - [.env](#env)
-- [feature updates ?](#feature-updates--)
+- [future updates ?](#future-updates--)
 
 ### Introduction
 In this project we create a package delivery system mainly applying the below 5 functionalities
@@ -97,7 +97,7 @@ npm init
 
 > doubts? follow [dotenv](https://www.npmjs.com/package/dotenv)
 
-### feature updates  ?
+### future updates  ?
 - will try to add google matrix api to fetch exact distance, time form picking up the package to delivering the package
 - will try to add admin role 
 > as of now user can access all routes
