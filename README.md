@@ -95,7 +95,7 @@ npm init
 - VERIFY_PAYMENT_SECRET_KEY
 > problem with naming ?, find and edit the name of the key where it has been used in the code
 
-> > doubts? follow [dotenv](https://www.npmjs.com/package/dotenv)
+> doubts? follow [dotenv](https://www.npmjs.com/package/dotenv)
 
 ### feature updates  ?
 - will try to add google matrix api to fetch exact distance, time form picking up the package to delivering the package
