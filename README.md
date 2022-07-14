@@ -12,12 +12,16 @@
 In this project we create a package delivery system mainly applying the below 5 functionalities
 - Registration Service
 > we will develop signup, login, verification of our user
+
 - Parcel Delivery Service
 > collect package details from user like package pickup address, drop of address, length of package etc...
+
 - Payment Service
 > after successfully collecting package details we will estimate a cost and ask the user to pay, this functionality inclueds using payment gateway for payments
+
 - Order History & Tracking
 > after successful payments we will generate a tracking id which will help to locate our package
+
 - Customer Feedback
 > after succesful delivery we will ask the user experience using the feedback form
 
@@ -50,14 +54,16 @@ npm init
 ```
 > it will installs all the packages which are in [package.json](https://github.com/Dheerajpenta/package-delivery-system/blob/main/package.json)
 
-- Create an accounts in [RazorPay](https://razorpay.com/)
+- Create an account in [RazorPay](https://razorpay.com/)
 > - follow razorpay [docs](https://razorpay.com/docs/) to know more about razorpay
 > - collect KEY_ID, KEY_SECRET, and create a verification secret key 
-> doubts? follow [docs](https://razorpay.com/docs/) or [YouTube](https://www.youtube.com/watch?v=DuL0bwvH1kg)
 > - save the secret keys in .env file
+> - create a webhook for route **/payment/verifypayment/** for payment catched. (this will run the api **your-host/payment/verifypayment/** after successful payment).
 > - follow [razorpay sdk](https://github.com/razorpay/razorpay-node) for knowing the package we are using for payments
 
-- Create an accounts in [Twilio](https://www.twilio.com/)
+> doubts? follow [docs](https://razorpay.com/docs/) or [YouTube](https://www.youtube.com/watch?v=DuL0bwvH1kg)
+
+- Create an account in [Twilio](https://www.twilio.com/)
 > - follow twilio [docs](https://www.twilio.com/docs/) to know more about twilio 
 > - collect TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_SERVICE_SID, TWILIO_PHONE_NUMBER
 > - save the secret keys in .env file
